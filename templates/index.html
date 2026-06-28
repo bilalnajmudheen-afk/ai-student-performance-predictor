@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎓 Student Performance Predictor</h1>
+    <p>Enter your academic details</p>
+
+    <form id="predictionForm">
+
+        <label>Study Time (1-4)</label>
+        <input type="number" id="studytime" required>
+
+        <label>Failures</label>
+        <input type="number" id="failures" required>
+
+        <label>Absences</label>
+        <input type="number" id="absences" required>
+
+        <label>G1 Marks</label>
+        <input type="number" id="G1" required>
+
+        <label>G2 Marks</label>
+        <input type="number" id="G2" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
